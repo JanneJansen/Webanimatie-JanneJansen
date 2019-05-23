@@ -251,6 +251,7 @@ p:nth-child(14) {
 }
     
 /*animatie voor de X-as verplaatsing van de tekst (p). */
+/*bron:https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate*/
 
     .schuifTransition {
       transition: 1s;
@@ -969,6 +970,7 @@ svg > g#ring10{
 }
 
 /*Animatie rondraaien svg, wanneer er op het svg wordt geklikt draait het rond.*/
+/*Bron: uitleg Danny*/
         
     
 .turn{

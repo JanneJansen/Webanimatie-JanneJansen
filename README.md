@@ -26,3 +26,11 @@ Wanneer er op spatie wordt gedrukt verandert de tekst kleur in een gradient. Als
 
 
 # bronnen 
+De bronnen zijn ook weergegeven in mijn code comment.
+Milou en Niels hebben mij erg geholpen wanneer ik vast liep.
+
+https://javascript.info/keyboard-events
+
+https://css-tricks.com/almanac/properties/a/animation/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate
