@@ -1,3 +1,6 @@
+
+/*standaard layout elementen. Er is hier flexbox toegepast. Alles wat in de body staat wordt zowel verticaal als horizontaal gecentreerd*/
+
 body    {
     background-color: floralwhite;
     display: flex;
@@ -6,11 +9,11 @@ body    {
     height: 60vh;
 }
 
-/*Desktop*/
+/*Desktop formaat------------------------------------------------------------------*/
 
 @media (max-width:1440px){
     
-/*SVG*/
+/*Vormgeving SVG*/
 
 svg{
     width: 30vw;
@@ -79,7 +82,7 @@ svg > g#ring10{
 
 
 
-/*TEKST*/
+/*layout en plaatsing van de tekst. */
 
 p:nth-child(1) {
     color: black;
@@ -87,13 +90,12 @@ p:nth-child(1) {
     font-size: 2em;
     font-weight: 600;
     
-     position: absolute;
+    position: absolute;
     left:52%;
-    bottom:30%;
-    
+    bottom:30%;  
     
 }
-
+    
 
 p:nth-child(2) {
     color: black;
@@ -115,8 +117,8 @@ p:nth-child(3) {
     font-weight: 100;
    
     position: absolute;
-  left:36%;
-  bottom:30.5%;
+    left:36%;
+    bottom:30.5%;
     
 }
 
@@ -247,6 +249,8 @@ p:nth-child(14) {
     
     
 }
+    
+/*animatie voor de X-as verplaatsing van de tekst (p). */
 
     .schuifTransition {
       transition: 1s;
@@ -304,20 +308,16 @@ p:nth-child(14) {
 
     }
 
-svg:hover{
-
-transition: transform 1s;
-transform: scale(0.80);
-
-}
 
 
     
 
 
-/*Ipad Pro*/
+/*Ipad pro formaat---------------------------------------------------------------*/
 
 @media (max-width:1024px){
+
+/*layout en plaatsing van de tekst. */
     
     svg{
         width: 70vw;}
@@ -489,6 +489,8 @@ p:nth-child(14) {
     
     
 }
+    
+/*animatie voor de X-as verplaatsing van de tekst (p). */
 
 .schuifTransition {
       transition: 1s;
@@ -546,9 +548,11 @@ p:nth-child(14) {
     
 }
 
-/*Iphone*/
+/*Iphone formaat------------------------------------------------------------------*/
 
 @media (max-width:375px){
+    
+ /*layout en plaatsing van de tekst. */
     
      svg{
         width: 80vw;
@@ -719,7 +723,8 @@ p:nth-child(14) {
   left:51%;
   bottom:3%;   
 }  
-    
+   
+/*animatie voor de X-as verplaatsing van de tekst (p). */
     
 .schuifTransition {
       transition: 1s;
@@ -778,16 +783,9 @@ p:nth-child(14) {
 }
 
 
+/*ANIMATIE----------------------------------------------------------------------*/
 
-/*ANIMATIe*/
-
-/*
- svg:hover{
-    
-    transform: scale(1.1);
-    transition: 1s ease-in;
-    } 
-*/
+/*animatie voor het inladen van het svg. De ringen hebben verschillende timing*/
     
 svg > g#ring1{
   animation: slidein 0.2s;
@@ -970,6 +968,7 @@ svg > g#ring10{
   }
 }
 
+/*Animatie rondraaien svg, wanneer er op het svg wordt geklikt draait het rond.*/
         
     
 .turn{
@@ -988,13 +987,10 @@ svg > g#ring10{
 }
     
 
-
-
-.aanschuiven{
-    cursor:pointer;
-}  
-
 /*Bron: https://css-tricks.com/almanac/properties/a/animation/*/
+
+
+/*Animatie gradient achtergrond, wanneer er op spatie wordt gedrukt verandert de kleur van de achtergrond in een gradient.*/
     
 .gradient  {
   animation: achtergrondgradient 3s ease-in-out infinite;
@@ -1019,7 +1015,7 @@ svg > g#ring10{
 
 
 
-
+/*Animatie gradient tekst, wanneer er op spatie wordt gedrukt verandert de kleur van de tekst in een gradient.*/
 
 
 .p {
@@ -1044,23 +1040,6 @@ animation: textTransition 3s infinite;
     }
 
 
-/*bron: milou nth-child optellen */
-
-/*
-p {
-    animation: opacitytext 5s ;  
-}
-
-@keyframes opacitytext{
-    0%{
-        opacity:0;
-    }
-    100%{
-        opacity:1;
-    }
-}
-*/
-    
 
 
     
