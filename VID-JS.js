@@ -13,7 +13,7 @@ var tekst11 = document.querySelector('.text11');
 var tekst12 = document.querySelector('.text12');
 var achtergrond = document.querySelector('body');
 var textTransition = document.querySelectorAll('.schuifTransition');
-//var textTransition = document.getElementsByClassName('schuifTransition');
+
 
 svg.addEventListener('click', function() {
     svg.classList.toggle('turn');
@@ -62,9 +62,7 @@ document.addEventListener('keydown', function(event) {
 });
  
 //document.addEventListener('click', function(){
-//   achtergrond.classList.toggle('gradient');
-//        
-//    
+//   achtergrond.classList.toggle('gradient');   
 //})
 
 schuifTest.addEventListener('click', function() {
@@ -87,7 +85,7 @@ schuifTest.addEventListener('click', function() {
 
 
 
-
+//for loop, alle code die binnen de loop staan wordt herhaald voor elk p element met de class textTransition. i is kleiner dan de lijst van de text transitions, elke keer dat die er doorheen loopt wordt er 1 i toegevoegd waardoor op een gegeven moment de i groter is dan de texttrasition lijst en dan stopt die.
 //bron: Milou/Niels
 
 document.addEventListener('keydown', function(event) {
