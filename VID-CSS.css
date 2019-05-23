@@ -1039,6 +1039,18 @@ animation: textTransition 3s infinite;
 }
     }
 
+.hover1, .hover2{
+transition: 1s ease-in-out}
+
+.hover1:hover{
+    
+ transform: scale(2) translateX(-20px);
+}
+.hover2:hover{
+    
+ transform: scale(2) translateX(20px);
+}
+
 
 
 
