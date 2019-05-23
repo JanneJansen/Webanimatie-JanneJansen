@@ -8,7 +8,7 @@ body    {
 
 /*Desktop*/
 
-@media (max-width:800em){
+@media (max-width:1440px){
     
 /*SVG*/
 
@@ -88,7 +88,7 @@ p:nth-child(1) {
     font-weight: 600;
     
      position: absolute;
-    left:54%;
+    left:52%;
     bottom:30%;
     
     
@@ -303,7 +303,15 @@ p:nth-child(14) {
     }
 
     }
-        
+
+svg:hover{
+
+transition: transform 1s;
+transform: scale(0.80);
+
+}
+
+
     
 
 
@@ -1038,6 +1046,7 @@ animation: textTransition 3s infinite;
 
 /*bron: milou nth-child optellen */
 
+/*
 p {
     animation: opacitytext 5s ;  
 }
@@ -1050,6 +1059,7 @@ p {
         opacity:1;
     }
 }
+*/
     
 
 
